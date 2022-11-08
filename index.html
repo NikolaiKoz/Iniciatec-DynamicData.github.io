@@ -16,63 +16,75 @@
   >
 
     <article
+    id="container"
     class="row justify-content-center">
 
-      <section class="bg-primary col-12 col-md-6 col-lg-3">
-        <figure>
-          <img
-        src="data:image/jpeg;base64,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"
-        alt="Flag Countruie">
-        </figure>
-        <figcaption>
-          <a href="#"
-          class="nav-link d-flex"
+
+      <section class="bg-primary col-12 col-md-6">
+
+        <div
+        class="d-flex"
+        >
+          <figure
+          class="bg-secondary"
+          style="width: 50%;"
           >
+            <img
+            src=""
+          alt="Flag Countruie">
+          </figure>
+          <figcaption
+          class="d-flex flex-column justify-content-around"
+          >
+            <a href="#"
+            class="nav-link d-flex"
+            >
+              <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="white"
+              class="bi bi-flag"
+              viewBox="0 0 16 16"
+              >
+                <path d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001M14 1.221c-.22.078-.48.167-.766.255-.81.252-1.872.523-2.734.523-.886 0-1.592-.286-2.203-.534l-.008-.003C7.662 1.21 7.139 1 6.5 1c-.669 0-1.606.229-2.415.478A21.294 21.294 0 0 0 3 1.845v6.433c.22-.078.48-.167.766-.255C4.576 7.77 5.638 7.5 6.5 7.5c.847 0 1.548.28 2.158.525l.028.01C9.32 8.29 9.86 8.5 10.5 8.5c.668 0 1.606-.229 2.415-.478A21.317 21.317 0 0 0 14 7.655V1.222z"/>
+              </svg>
+              <h5>Countruies Name</h5>
+            </a>
+            <a href="#"
+            class="nav-link d-flex"
+            >
             <svg
             xmlns="http://www.w3.org/2000/svg"
             width="20"
             height="20"
             fill="white"
-            class="bi bi-flag"
+            class="bi bi-watch"
             viewBox="0 0 16 16"
             >
-              <path d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001M14 1.221c-.22.078-.48.167-.766.255-.81.252-1.872.523-2.734.523-.886 0-1.592-.286-2.203-.534l-.008-.003C7.662 1.21 7.139 1 6.5 1c-.669 0-1.606.229-2.415.478A21.294 21.294 0 0 0 3 1.845v6.433c.22-.078.48-.167.766-.255C4.576 7.77 5.638 7.5 6.5 7.5c.847 0 1.548.28 2.158.525l.028.01C9.32 8.29 9.86 8.5 10.5 8.5c.668 0 1.606-.229 2.415-.478A21.317 21.317 0 0 0 14 7.655V1.222z"/>
+              <path d="M8.5 5a.5.5 0 0 0-1 0v2.5H6a.5.5 0 0 0 0 1h2a.5.5 0 0 0 .5-.5V5z"/>
+              <path d="M5.667 16C4.747 16 4 15.254 4 14.333v-1.86A5.985 5.985 0 0 1 2 8c0-1.777.772-3.374 2-4.472V1.667C4 .747 4.746 0 5.667 0h4.666C11.253 0 12 .746 12 1.667v1.86a5.99 5.99 0 0 1 1.918 3.48.502.502 0 0 1 .582.493v1a.5.5 0 0 1-.582.493A5.99 5.99 0 0 1 12 12.473v1.86c0 .92-.746 1.667-1.667 1.667H5.667zM13 8A5 5 0 1 0 3 8a5 5 0 0 0 10 0z"/>
             </svg>
-            <h5>Countruies Name</h5>
-          </a>
-          <a href="#"
-          class="nav-link d-flex"
-          >
-          <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="20"
-          fill="white"
-          class="bi bi-watch"
-          viewBox="0 0 16 16"
-          >
-            <path d="M8.5 5a.5.5 0 0 0-1 0v2.5H6a.5.5 0 0 0 0 1h2a.5.5 0 0 0 .5-.5V5z"/>
-            <path d="M5.667 16C4.747 16 4 15.254 4 14.333v-1.86A5.985 5.985 0 0 1 2 8c0-1.777.772-3.374 2-4.472V1.667C4 .747 4.746 0 5.667 0h4.666C11.253 0 12 .746 12 1.667v1.86a5.99 5.99 0 0 1 1.918 3.48.502.502 0 0 1 .582.493v1a.5.5 0 0 1-.582.493A5.99 5.99 0 0 1 12 12.473v1.86c0 .92-.746 1.667-1.667 1.667H5.667zM13 8A5 5 0 1 0 3 8a5 5 0 0 0 10 0z"/>
-          </svg>
-            <h5>GTM</h5>
-          </a>
-          <a href="#"
-          class="nav-link d-flex"
-          >
-          <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="20"
-          fill="white"
-          class="bi bi-geo-alt"
-          viewBox="0 0 16 16"
-          >
-            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
-            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-          </svg>
-            <h5>Google maps location</h5>
-          </a>
-        </figcaption>
+              <h5>GTM</h5>
+            </a>
+            <a href="#"
+            class="nav-link d-flex"
+            >
+            <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="white"
+            class="bi bi-geo-alt"
+            viewBox="0 0 16 16"
+            >
+              <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+              <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+            </svg>
+              <h5>Google maps location</h5>
+            </a>
+          </figcaption>
+        </div>
       </section>
 
 
@@ -80,7 +92,7 @@
     </article>
 
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+     <script src="./index.js"></script>
   </body>
 </html>
