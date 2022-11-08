@@ -23396,3 +23396,120 @@ const data = [
 ];
 
 const container = document.getElementById("container");
+const times = document.getElementById('time');
+
+console.log(data[0].timezones.length)
+
+
+
+
+
+const cardGenerator = () =>{
+
+    const time = (timezones) => {
+
+        for(let j = 0; j < timezones.length ; j++){
+
+            times.innerHTML +=
+            `<svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="white"
+            class="bi bi-watch"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8.5 5a.5.5 0 0 0-1 0v2.5H6a.5.5 0 0 0 0 1h2a.5.5 0 0 0 .5-.5V5z"
+            />
+            <path
+              d="M5.667 16C4.747 16 4 15.254 4 14.333v-1.86A5.985 5.985 0 0 1 2 8c0-1.777.772-3.374 2-4.472V1.667C4 .747 4.746 0 5.667 0h4.666C11.253 0 12 .746 12 1.667v1.86a5.99 5.99 0 0 1 1.918 3.48.502.502 0 0 1 .582.493v1a.5.5 0 0 1-.582.493A5.99 5.99 0 0 1 12 12.473v1.86c0 .92-.746 1.667-1.667 1.667H5.667zM13 8A5 5 0 1 0 3 8a5 5 0 0 0 10 0z"
+            />
+          </svg>
+          <h5 class="ps-2">${timezones[j]}</h5>
+            `
+        }
+
+    }
+
+    let card = '';
+
+
+    for(let i = 0; i < data.length; i++){
+
+
+    card = `
+    <section class="col-12 col-md-6">
+    <div
+      class="d-flex border border-2 rounded-3 justify-content-center align-items-center"
+    >
+      <figure class="text-light pt-3" style="width: 50%; height: 100%">
+        <img style="width: 100%" src="${data[i].flags.svg}" alt="Flag Countruie" />
+      </figure>
+      <figcaption
+        class="d-flex flex-column ps-5 justify-content-around text-light"
+      >
+        <a href="#" class="nav-link d-flex">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="white"
+            class="bi bi-flag"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001M14 1.221c-.22.078-.48.167-.766.255-.81.252-1.872.523-2.734.523-.886 0-1.592-.286-2.203-.534l-.008-.003C7.662 1.21 7.139 1 6.5 1c-.669 0-1.606.229-2.415.478A21.294 21.294 0 0 0 3 1.845v6.433c.22-.078.48-.167.766-.255C4.576 7.77 5.638 7.5 6.5 7.5c.847 0 1.548.28 2.158.525l.028.01C9.32 8.29 9.86 8.5 10.5 8.5c.668 0 1.606-.229 2.415-.478A21.317 21.317 0 0 0 14 7.655V1.222z"
+            />
+          </svg>
+          <h5 class="ps-2">${data[i].name.common}</h5>
+        </a>
+        <a href="#" class="nav-link d-flex" id="time">
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="white"
+            class="bi bi-watch"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8.5 5a.5.5 0 0 0-1 0v2.5H6a.5.5 0 0 0 0 1h2a.5.5 0 0 0 .5-.5V5z"
+            />
+            <path
+              d="M5.667 16C4.747 16 4 15.254 4 14.333v-1.86A5.985 5.985 0 0 1 2 8c0-1.777.772-3.374 2-4.472V1.667C4 .747 4.746 0 5.667 0h4.666C11.253 0 12 .746 12 1.667v1.86a5.99 5.99 0 0 1 1.918 3.48.502.502 0 0 1 .582.493v1a.5.5 0 0 1-.582.493A5.99 5.99 0 0 1 12 12.473v1.86c0 .92-.746 1.667-1.667 1.667H5.667zM13 8A5 5 0 1 0 3 8a5 5 0 0 0 10 0z"
+            />
+          </svg>
+          <h5 class="ps-2">${data[i].timezones}<br></h5>
+        </a>
+        <a href="${data[i].maps.googleMaps}" target="_blank" class="nav-link d-flex">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="white"
+            class="bi bi-geo-alt"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"
+            />
+            <path
+              d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+            />
+          </svg>
+          <h5 class="ps-2">Google maps</h5>
+        </a>
+      </figcaption>
+    </div>
+  </section>
+`
+container.innerHTML += card;
+
+    }
+
+
+
+};
+
+cardGenerator();
