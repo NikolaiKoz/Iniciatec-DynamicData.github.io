@@ -23439,9 +23439,9 @@ const cardGenerator = () =>{
 
 
     card = `
-    <section class="col-12 col-md-6">
+    <section class="col-12">
     <div
-      class="d-flex border border-2 rounded-3 justify-content-center align-items-center"
+      class="d-flex flex-wrap border border-2 rounded-3 justify-content-center align-items-center"
     >
       <figure class="text-light pt-3" style="width: 50%; height: 100%">
         <img style="width: 100%" src="${data[i].flags.svg}" alt="Flag Countruie" />
@@ -23480,7 +23480,7 @@ const cardGenerator = () =>{
               d="M5.667 16C4.747 16 4 15.254 4 14.333v-1.86A5.985 5.985 0 0 1 2 8c0-1.777.772-3.374 2-4.472V1.667C4 .747 4.746 0 5.667 0h4.666C11.253 0 12 .746 12 1.667v1.86a5.99 5.99 0 0 1 1.918 3.48.502.502 0 0 1 .582.493v1a.5.5 0 0 1-.582.493A5.99 5.99 0 0 1 12 12.473v1.86c0 .92-.746 1.667-1.667 1.667H5.667zM13 8A5 5 0 1 0 3 8a5 5 0 0 0 10 0z"
             />
           </svg>
-          <h5 class="ps-2">${data[i].timezones}<br></h5>
+          <h5 class="ps-2" id="salto">${data[i].timezones}<br></h5>
         </a>
         <a href="${data[i].maps.googleMaps}" target="_blank" class="nav-link d-flex">
           <svg
@@ -23513,3 +23513,4 @@ container.innerHTML += card;
 };
 
 cardGenerator();
+
